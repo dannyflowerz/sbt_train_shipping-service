@@ -6,10 +6,8 @@ server:
   port: 8380
 eureka:
   client:
-    serviceUrl:
-      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
-  instance:
-    prefer-ip-address: true
+    service-url:
+      default-zone: ${EUREKA_URI:http://localhost:8761/eureka}
 feign:
   hystrix:
     enabled: true
@@ -30,10 +28,8 @@ server:
   port: 8381
 eureka:
   client:
-    serviceUrl:
-      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
-  instance:
-    prefer-ip-address: true
+    service-url:
+      default-zone: ${EUREKA_URI:http://localhost:8761/eureka}
 feign:
   hystrix:
     enabled: true

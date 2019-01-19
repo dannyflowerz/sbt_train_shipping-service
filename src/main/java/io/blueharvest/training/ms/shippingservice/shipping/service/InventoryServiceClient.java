@@ -22,7 +22,7 @@ public interface InventoryServiceClient {
 
     }
 
-    @DeleteMapping("/api/inventory-service/products/reservations/{reservation-code}")
+    @DeleteMapping("/products/reservations/{reservation-code}")
     void dispense(@PathVariable("reservation-code") String reservationCode);
 
 }
